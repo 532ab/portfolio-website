@@ -32,11 +32,10 @@ const ContactSection = ({onOpen}) => {
           </h1>
 
           <p className="text-gray-200 text-base sm:text-lg leading-relaxed">
-            I’m a software engineer who enjoys building thoughtful, user-focused
-            applications. I’m especially interested in full-stack development
-            and exploring how emerging technologies like AI can solve real-world
-            problems. I care deeply about clean code, performance, and creating
-            experiences that feel intuitive and purposeful.
+            I'm passionate about building cool software and solving problems with code.
+            In my spare time, I'm always learning new technologies, hitting the gym,
+            and unwinding with video games. Let's connect if you want to chat about tech,
+            collaboration opportunities, or anything else!
           </p>
 
           <button 
