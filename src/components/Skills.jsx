@@ -23,6 +23,10 @@ const Skills = () => {
     Databases: [
       { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
     ],
+    Cloud: [
+      { name: "AWS", icon: "https://images.icon-icons.com/2407/PNG/512/aws_icon_146237.png" },
+      { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+    ],
     "Developer Tools": [
       { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
       { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
@@ -41,6 +45,10 @@ const Skills = () => {
       { name: "Memory Management", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
       { name: "File I/O", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
       { name: "Agile Methodology", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+    ],
+    Certifications: [
+      { name: "CompTIA Security+", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
+      { name: "AZ-900 (In Progress)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
     ],
   };
 
