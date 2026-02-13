@@ -1,16 +1,38 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, Vite, and Tailwind CSS. Features smooth animations, interactive components, and a clean design showcasing skills, projects, and contact information.
 
-Currently, two official plugins are available:
+**Live Demo:** https://abhichaddha.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- 🎨 Modern, responsive design with Tailwind CSS
+- ✨ Smooth animations using Framer Motion and GSAP
+- 📱 Mobile-first approach
+- 🎯 Interactive skills section with 7 categories
+- 📚 Education, coursework, and activities showcase
+- 🚀 Fast performance with Vite
+- 🌙 Dark mode support
+- 🔄 Auto-deployed from GitHub to Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React 19** - UI library
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **GSAP** - Advanced animations
+- **Vercel** - Hosting & deployment
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+Clone the repository and install dependencies:
+
+```bash
+npm install
+npm run dev
+```
+
+## Deployment
+
+This project is deployed on Vercel and automatically updates when you push to GitHub.
