@@ -66,7 +66,7 @@ const ContactModal = ({ isOpen, onClose }) => {
     // Simulate a short delay for better UX
     setTimeout(() => {
       const subject = `Contact from ${formData.name}`
-      const body = formData.message
+      const body = `${formData.message}`
       
       window.location.href = `mailto:abhimanyuchaddha@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
       
