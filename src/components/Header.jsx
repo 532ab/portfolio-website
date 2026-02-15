@@ -79,28 +79,60 @@ const Header = ({ openContactForm }) => {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg px-4 py-5 space-y-5">
-          <nav className="flex flex-col space-y-3">
-            {["Home", "About", "Projects", "Contact", "Skills"].map((item) => (
-              <a key={item} onClick={toggleMenu} className="text-gray-300 font-medium py-2" href={`#${item.toLowerCase()}`}>
+      <motion.div
+        initial={{ opacity: 0, height: 0 }}
+        animate={{ opacity: isOpen ? 1 : 0, height: isOpen ? "auto" : 0 }}
+        exit={{ opacity: 0, height: 0 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="md:hidden overflow-hidden"
+      >
+        <div className="bg-white dark:bg-gray-900 shadow-2xl px-4 py-6 space-y-4 backdrop-blur-sm">
+          <nav className="flex flex-col space-y-2">
+            {["Home", "About", "Projects", "Skills", "Contact"].map((item, index) => (
+              <motion.a
+                key={item}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: isOpen ? 1 : 0, x: isOpen ? 0 : -20 }}
+                transition={{ delay: isOpen ? index * 0.05 : 0, duration: 0.3 }}
+                onClick={toggleMenu}
+                className="text-gray-800 dark:text-gray-100 font-medium py-3 px-4 rounded-lg hover:bg-violet-100 dark:hover:bg-gray-800 hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-200"
+                href={`#${item.toLowerCase()}`}
+              >
                 {item}
-              </a>
+              </motion.a>
             ))}
           </nav>
-          <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-            <button
+
+          <div className="pt-4 space-y-3 border-t border-gray-200 dark:border-gray-700">
+            <motion.a
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : 10 }}
+              transition={{ delay: isOpen ? 0.25 : 0, duration: 0.3 }}
+              href="/Chaddha_Abhimanyu.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="block"
+            >
+              <button className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600 text-red-700 dark:text-red-400 font-bold hover:from-red-700 hover:to-red-700 hover:text-white dark:hover:from-red-700 dark:hover:to-red-700 transition-all duration-300 shadow-md hover:shadow-lg">
+                Resume
+              </button>
+            </motion.a>
+            <motion.button
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : 10 }}
+              transition={{ delay: isOpen ? 0.3 : 0, duration: 0.3 }}
               onClick={() => {
                 toggleMenu()
                 openContactForm()
               }}
-              className="mt-0 block w-full px-3 py-2 rounded-lg bg-gradient-to-r from-violet-600 to-violet-400 font-bold"
+              className="w-full px-4 py-3 rounded-lg bg-gradient-to-r from-violet-600 to-violet-400 dark:from-violet-700 dark:to-violet-500 text-white font-bold hover:shadow-lg hover:from-violet-700 hover:to-violet-600 transition-all duration-300 shadow-md"
             >
               Contact Me
-            </button>
+            </motion.button>
           </div>
         </div>
-      )}
+      </motion.div>
     </header>
   )
 }
