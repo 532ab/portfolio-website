@@ -48,7 +48,8 @@ const Skills = () => {
     ],
     Certifications: [
       { name: "CompTIA Security+", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
-      { name: "AZ-900 (In Progress)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+      { name: "Microsoft Azure Fundamentals (In Progress)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+      { name: "AWS Certified Cloud Practitioner (In Progress)", icon: "https://images.icon-icons.com/2407/PNG/512/aws_icon_146237.png" },
     ],
   };
 
